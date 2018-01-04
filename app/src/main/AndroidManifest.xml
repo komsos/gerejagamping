@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kerjapraktik.androidgereja">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="com.kerjapraktik.androidgereja.MainApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Portal Berita Paroki Gamping"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.kerjapraktik.androidgereja.berita"
+            android:label="Portal Berita Paroki Gamping"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.kerjapraktik.androidgereja.DetailBeritaActivity"
+            android:label="@string/title_activity_detail_berita"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!-- <activity android:name=".berita"></activity> -->
+        <activity
+            android:name="com.kerjapraktik.androidgereja.Category.renungan"
+            android:label="Renungan" />
+        <activity
+            android:name="com.kerjapraktik.androidgereja.Category.khotbah"
+            android:label="Khotbah" />
+        <activity
+            android:name="com.kerjapraktik.androidgereja.Category.cerpen"
+            android:label="Cerpen" />
+    </application>
+
+</manifest>
